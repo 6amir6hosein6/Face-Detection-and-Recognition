@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1o45PSf0qWIEvnMw9pXC983Zmz1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/known/Hossein" />
+      <recent name="$PROJECT_DIR$/known" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/known/Hassan" />
+      <recent name="$PROJECT_DIR$/known/Mojatab-Hashemi" />
+      <recent name="$PROJECT_DIR$/unknown" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="generate_face_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_face_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="opencv-6-2-99-motio detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OpenCV-1399-1-10/FirstPart" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OpenCV-1399-1-10/FirstPart/opencv-6-2-99-motio detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.generate_face_dataset" />
+        <item itemvalue="Python.opencv-6-2-99-motio detection" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="" />
+      <created>1612532999326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612532999326</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1614705119270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614705119270" />
+    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl" timestamp="1614704780960">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614704780960" />
+    <state width="1295" height="165" key="GridCell.Tab.0.bottom" timestamp="1614704792446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1295" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614704792446" />
+    <state width="1295" height="165" key="GridCell.Tab.0.center" timestamp="1614704792445">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1295" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614704792445" />
+    <state width="1295" height="165" key="GridCell.Tab.0.left" timestamp="1614704792444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1295" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614704792444" />
+    <state width="1295" height="165" key="GridCell.Tab.0.right" timestamp="1614704792445">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1295" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614704792445" />
+    <state x="178" y="0" key="SettingsEditor" timestamp="1614213947263">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="178" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614213947263" />
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614212967142">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614212967142" />
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614199605642">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614199605642" />
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1614455571711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1614455571711" />
+  </component>
+</project>
