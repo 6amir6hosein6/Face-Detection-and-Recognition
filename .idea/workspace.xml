@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,23 +191,31 @@
       <option name="project" value="LOCAL" />
       <updated>1617928064483</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding git ignore file">
+      <created>1617973390523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617973390523</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="increasing speed of program (with using Threads) amd adding a little GUI using PyQt&#10;&#10;adding function in order to download new file from backend using API" />
-    <option name="LAST_COMMIT_MESSAGE" value="increasing speed of program (with using Threads) amd adding a little GUI using PyQt&#10;&#10;adding function in order to download new file from backend using API" />
+    <MESSAGE value="adding git ignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding git ignore file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="169" width="508" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617973300113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="169" width="508" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1617973300113" />
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1617928063566">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1617973390324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617928063566" />
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617973390324" />
     <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl" timestamp="1617793895718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -234,10 +240,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1617765720567" />
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1617928076466">
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1617973395814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617928076466" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617973395814" />
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614212967142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
