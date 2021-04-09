@@ -11,7 +11,7 @@ MODEL = "hog"  # hog
 
 video = cv2.VideoCapture(0)
 
-print('loading known faces')
+print('loading faces faces')
 
 
 def find_face_and_recognize():

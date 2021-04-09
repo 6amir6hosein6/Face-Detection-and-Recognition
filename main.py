@@ -1,107 +1,158 @@
 import face_recognition
-import os
 import cv2
+import requests
+import json
+import os
+import base64
+from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
+from ui.wifi import Ui_wifi
+from ui.Confirmation import Ui_confirmation
+import threading
 import time
-import re
-import numpy as np
 
-KNOWN_FACES = "known"
-# UNKNOWN_FACES = "unknown"
+dialog_wifi = None
+dialog_confirmation = None
+
+Users = "faces"
+
 TOLERANCE = 0.5
 FRAME_THICKNESS = 3
 FONT_THICKNESS = 2
 MODEL = "hog"  # hog
 
-video = cv2.VideoCapture(0)
-
-print('loading known faces')
-
 known_face = []
 known_name = []
 
-for name in os.listdir(KNOWN_FACES):
-    for filename in os.listdir(f'{KNOWN_FACES}/{name}'):
-        image = face_recognition.load_image_file(f"{KNOWN_FACES}/{name}/{filename}")
-        encoding = face_recognition.face_encodings(image)[0]
-
-        known_face.append(encoding)
-        known_name.append(name)
-
-print('processing unknown faces')
-
-# for filename in os.listdir(UNKNOWN_FACES):
+video_screen = cv2.imread('start.jpeg')
+t1 = None
+found = False
+match = None
 
 
-# import tensorflow.keras as keras
-# import tensorflow as tf
-# import numpy as np
+def face_loading():
+    for name in os.listdir(Users):
+        for filename in os.listdir(f'{Users}/{name}'):
+            image = face_recognition.load_image_file(f"{Users}/{name}/{filename}")
+            try:
+                encoding = face_recognition.face_encodings(image)[0]
 
-face_kind = ["real", "fake"]
-# new_model = tf.keras.models.load_model('./animal_detector')
-# print(new_model.summary())
+                known_face.append(encoding)
+                known_name.append(name)
+            except:
+                pass
 
 
-def find_face_and_recognize():
+def face_detection():
+    global video_screen, found
     while True:
-        ret, image = video.read()
-        locations = face_recognition.face_locations(image, model=MODEL)
-
-        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-
-        number_of_face = 0
-
-        for index, face_location in zip(range(len(locations)), locations):
-
-            height = face_location[1] - face_location[3]
-
-            if height > 150:
-
-                number_of_face = number_of_face + 1
-
-                top_left = (face_location[3], face_location[0])
-                bottom_right = (face_location[1], face_location[2])
-
-                color = [0, 255, 0]
-
-                cv2.rectangle(image, top_left, bottom_right, color, FRAME_THICKNESS)
-
-                top_left = (face_location[3], face_location[2])
-                bottom_right = (face_location[1], face_location[2] + 22)
-
-                if number_of_face == 1:
-                    encodings = face_recognition.face_encodings(image, locations)
-                    results = face_recognition.compare_faces(known_face, encodings[index], TOLERANCE)
-                    match = None
-                    if True in results:
-                        match = known_name[results.index(True)]
-                        cv2.rectangle(image, top_left, bottom_right, color, cv2.FILLED)
-                        cv2.putText(image, match, (face_location[3] + 10, face_location[2] + 15),
-                                    cv2.FONT_HERSHEY_SIMPLEX,
-                                    0.5,
-                                    (255, 255, 255), FONT_THICKNESS)
-                        # print('تشخیص داده شد')
-                        #
-                        # return
+        if not found:
+            faces = face_recognition.face_locations(video_screen, model=MODEL)
+            time.sleep(1)
+            number_of_face = len(faces)
+            if number_of_face == 1:
+                recognize_face(video_screen, faces)
 
 
-                else:
-                    print('لظفا فقط یک چهره در کادر باشد')
+def recognize_face(frame, locations):
+    for index, face_location in zip(range(len(locations)), locations):
 
-        image2 = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        height = face_location[1] - face_location[3]
 
-        # new_array = cv2.resize(image, (100, 100))
-        # X = [new_array]
-        # X_train = np.array(X).reshape(-1, 100, 100, 3)
-        # X_train = tf.keras.utils.normalize(X_train, axis=1)
-        # predictions = new_model.predict(X_train)
-        # cv2.putText(image, face_kind[np.argmax(predictions[0])], (300, 300),
-        #             cv2.FONT_HERSHEY_SIMPLEX,
-        #             0.5,
-        #             (255, 255, 255), FONT_THICKNESS)
+        if height > 50:
 
-        cv2.imshow('video', image2)
+            top_left = (face_location[3], face_location[0])
+            bottom_right = (face_location[1], face_location[2])
+            color = [0, 255, 0]
+            cv2.rectangle(frame, top_left, bottom_right, color, FRAME_THICKNESS)
+
+            encodings = face_recognition.face_encodings(frame, locations)
+            results = face_recognition.compare_faces(known_face, encodings[index], TOLERANCE)
+
+            if True in results:
+                global found, match, video_screen
+                found, match = True, known_name[results.index(True)]
+                video_screen = cv2.imread('start.jpeg')
+
+
+def camera_starting(video):
+    global found, match
+    while True:
+        if found:
+            asking_for_confirmation(match)
+
+        ret, frame = video.read()
+
+        global video_screen
+        video_screen = frame.copy()
+
+        cv2.imshow('video',video_screen)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
 
-find_face_and_recognize()
+def getting_new_faces():
+    try:
+        url = 'https://xface-detection.herokuapp.com/api/user/sendInfo'
+
+        response_json = requests.get(url)
+
+        response_data = json.loads(response_json.text)
+
+        users = response_data['data']
+
+        for user in users:
+
+            path = os.path.join('faces', user['uuId'])
+
+            if not os.path.exists('faces/' + user['uuId']):
+                os.makedirs(path, mode=0o777)
+
+                imgdata = base64.b64decode(user['imageData'])
+                name = user['firstName'] + ' ' + user['lastName']
+                filename = 'faces/' + user[
+                    'uuId'] + '/' + name + '.jpg'  # I assume you have a way of picking unique filenames
+                with open(filename, 'wb') as f:
+                    f.write(imgdata)
+    except:
+        noWifi()
+
+
+def noWifi():
+    global dialog_wifi
+    dialog_wifi = QtWidgets.QDialog()
+    dialog_wifi.ui = Ui_wifi()
+
+    dialog_wifi.ui.setupUi(dialog_wifi)
+
+    dialog_wifi.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+    dialog_wifi.exec_()
+
+
+def asking_for_confirmation(name):
+    global match, found, dialog_confirmation
+    match, found = None, False
+    dialog_confirmation = QtWidgets.QDialog()
+    dialog_confirmation.ui = Ui_confirmation()
+
+    dialog_confirmation.ui.setupUi(dialog_confirmation)
+
+    dialog_confirmation.ui.name.setText(name)
+
+    dialog_confirmation.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+
+    dialog_confirmation.exec_()
+
+
+if __name__ == "__main__":
+    video = cv2.VideoCapture(0)
+    app = QtWidgets.QApplication(sys.argv)
+
+    getting_new_faces()
+
+    face_loading()
+
+    t1 = threading.Thread(target=face_detection)
+    t1.start()
+
+    camera_starting(video)

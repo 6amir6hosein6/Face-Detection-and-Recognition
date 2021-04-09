@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="" />
+    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ui/MainWindow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/icon_rc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/wifi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_face_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_face_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/known/Ahad-Najafi/Ahad-Nafai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/faces/Ahad-Najafi/Ahad-Nafai.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/known/Ali-Amiri/Ali-Amiri.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/faces/Ali-Amiri/Ali-Amiri.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/known/Ali-Azarpeivand/Ali-Azarpeivand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/faces/Ali-Azarpeivand/Ali-Azarpeivand.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/known/Amirhosein-Najafi/Amirhosein-Najafi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/faces/Amirhosein-Najafi/Amirhosein-Najafi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/known/Amirhosein-Najafi/photo5832346274509206832.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/faces/Amirhosein-Najafi/photo5832346274509206832.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521567.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521568.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521570.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521571.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521572.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521573.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521574.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521575.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521576.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521578.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5830094474695521579.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5832346274509206834.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/photo5832346274509206840.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521568.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521570.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521571.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521572.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521573.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521574.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521575.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521576.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521578.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5830094474695521579.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5832346274509206834.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unknown/photo5832346274509206840.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,22 +73,86 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/faces/da459dd1-fbcb-4efc-8ceb-4e3cae95ca9d" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/faces/da459dd1-fbcb-4efc-8ceb-4e3cae95ca9d" />
+      <recent name="$PROJECT_DIR$/faces/5f797a3d-2662-49ce-a704-fb3c07abacb1" />
+      <recent name="$PROJECT_DIR$/ui" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/known/Hassan" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/known/Hossein" />
       <recent name="$PROJECT_DIR$/known" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/known/Hassan" />
-      <recent name="$PROJECT_DIR$/known/Mojatab-Hashemi" />
-      <recent name="$PROJECT_DIR$/unknown" />
-    </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="Testing GPU" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing GPU.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="asdasd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/asdasd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="find_site_rank_by_keyword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../finding_rank_of_site_in_google" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../finding_rank_of_site_in_google/find_site_rank_by_keyword.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="generate_face_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,32 +195,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="opencv-6-2-99-motio detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="face_recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OpenCV-1399-1-10/FirstPart" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OpenCV-1399-1-10/FirstPart/opencv-6-2-99-motio detection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Testing GPU" />
+        <item itemvalue="Python.find_site_rank_by_keyword" />
+        <item itemvalue="Python.asdasd" />
         <item itemvalue="Python.generate_face_dataset" />
-        <item itemvalue="Python.opencv-6-2-99-motio detection" />
       </list>
     </recent_temporary>
   </component>
@@ -132,48 +216,64 @@
       <option name="presentableId" value="Default" />
       <updated>1612532999326</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1614705144746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614705144747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1614705119270">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1614705143956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614705119270" />
-    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl" timestamp="1614704780960">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1614705143956" />
+    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl" timestamp="1617793895718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614704780960" />
-    <state width="1295" height="165" key="GridCell.Tab.0.bottom" timestamp="1614704792446">
+    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1617793895718" />
+    <state width="1345" height="136" key="GridCell.Tab.0.bottom" timestamp="1617927584194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1295" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614704792446" />
-    <state width="1295" height="165" key="GridCell.Tab.0.center" timestamp="1614704792445">
+    <state width="1345" height="136" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
+    <state width="1345" height="136" key="GridCell.Tab.0.center" timestamp="1617927584194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1295" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614704792445" />
-    <state width="1295" height="165" key="GridCell.Tab.0.left" timestamp="1614704792444">
+    <state width="1345" height="136" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
+    <state width="1345" height="136" key="GridCell.Tab.0.left" timestamp="1617927584193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1295" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614704792444" />
-    <state width="1295" height="165" key="GridCell.Tab.0.right" timestamp="1614704792445">
+    <state width="1345" height="136" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1617927584193" />
+    <state width="1345" height="136" key="GridCell.Tab.0.right" timestamp="1617927584194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1295" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614704792445" />
-    <state x="178" y="0" key="SettingsEditor" timestamp="1614213947263">
+    <state width="1345" height="136" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
+    <state x="34" y="0" key="SettingsEditor" timestamp="1617765720567">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="178" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614213947263" />
+    <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1617765720567" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1614705215127">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614705215127" />
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614212967142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614212967142" />
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614199605642">
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617918899957">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614199605642" />
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1614455571711">
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1617918899957" />
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1617927900619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1614455571711" />
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1617927900619" />
   </component>
 </project>
