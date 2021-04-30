@@ -10,6 +10,9 @@ from ui.wifi import Ui_wifi
 from ui.Confirmation import Ui_confirmation
 import threading
 import time
+import re
+from functools import partial
+import Url
 
 dialog_wifi = None
 dialog_confirmation = None
@@ -47,8 +50,8 @@ def face_detection():
     global video_screen, found
     while True:
         if not found:
-            faces = face_recognition.face_locations(video_screen, model=MODEL)
             time.sleep(1)
+            faces = face_recognition.face_locations(video_screen, model=MODEL)
             number_of_face = len(faces)
             if number_of_face == 1:
                 recognize_face(video_screen, faces)
@@ -86,34 +89,36 @@ def camera_starting(video):
         global video_screen
         video_screen = frame.copy()
 
-        cv2.imshow('video',video_screen)
+        cv2.imshow('video', video_screen)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
 
+def saving_new_faces(users):
+    for user in users:
+        name = user['firstName'] + ' ' + user['lastName']
+        folder = user['uuId'] + '(' + name + ')'
+        path = os.path.join('faces', folder)
+        if not os.path.exists('faces/' + folder):
+            os.makedirs(path, mode=0o777)
+
+            newfile = base64.b64decode(user['newImage'])
+
+            filename = 'faces/' + folder + '/' + name + '2.jpg'
+            with open(filename, 'wb') as f:
+                f.write(newfile)
+
+
 def getting_new_faces():
     try:
-        url = 'https://xface-detection.herokuapp.com/api/user/sendInfo'
+        url = Url.base + Url.get_new_faces
 
         response_json = requests.get(url)
 
         response_data = json.loads(response_json.text)
 
-        users = response_data['data']
+        saving_new_faces(response_data['data'])
 
-        for user in users:
-
-            path = os.path.join('faces', user['uuId'])
-
-            if not os.path.exists('faces/' + user['uuId']):
-                os.makedirs(path, mode=0o777)
-
-                imgdata = base64.b64decode(user['imageData'])
-                name = user['firstName'] + ' ' + user['lastName']
-                filename = 'faces/' + user[
-                    'uuId'] + '/' + name + '.jpg'  # I assume you have a way of picking unique filenames
-                with open(filename, 'wb') as f:
-                    f.write(imgdata)
     except:
         noWifi()
 
@@ -129,15 +134,39 @@ def noWifi():
     dialog_wifi.exec_()
 
 
-def asking_for_confirmation(name):
+def confirmation(uuid):
+    print(uuid)
+    try:
+        url = Url.base + Url.confirmation
+        data = {
+            'uuid': uuid,
+        }
+        requests.post(url, data=data)
+    except:
+        noWifi()
+    dialog_confirmation.close()
+
+
+def unconfirmation():
+    dialog_confirmation.close()
+
+
+def asking_for_confirmation(info):
     global match, found, dialog_confirmation
     match, found = None, False
+
+    name = re.search("\((.+)\)", info)[1]
+    uuid = re.sub(r"(\(.+\))", "", info)
+
     dialog_confirmation = QtWidgets.QDialog()
     dialog_confirmation.ui = Ui_confirmation()
 
     dialog_confirmation.ui.setupUi(dialog_confirmation)
 
     dialog_confirmation.ui.name.setText(name)
+
+    dialog_confirmation.ui.confim.clicked.connect(partial(confirmation, uuid=uuid))
+    dialog_confirmation.ui.unconfirm.clicked.connect(partial(unconfirmation))
 
     dialog_confirmation.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
@@ -152,7 +181,7 @@ if __name__ == "__main__":
 
     face_loading()
 
-    t1 = threading.Thread(target=face_detection)
-    t1.start()
-
-    camera_starting(video)
+    # t1 = threading.Thread(target=face_detection)
+    # t1.start()
+    #
+    # camera_starting(video)

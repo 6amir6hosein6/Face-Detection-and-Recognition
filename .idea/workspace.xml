@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="" />
+    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="adding git ignore file">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/amirhosein.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/face_recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/face_recognition.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing GPU.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faces/Ahad-Najafi/Ahad-Nafai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faces/Ali-Amiri/Ali-Amiri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faces/Ali-Azarpeivand/Ali-Azarpeivand.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faces/Amirhosein-Najafi/Amirhosein-Najafi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faces/Amirhosein-Najafi/photo5832346274509206832.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_face_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,24 +48,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/faces/da459dd1-fbcb-4efc-8ceb-4e3cae95ca9d" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpenCV-1399-1-10/FirstPart" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testingModel" />
+      <recent name="$PROJECT_DIR$/tracker" />
+      <recent name="$PROJECT_DIR$/faces/1e156614-c598-4d82-bc15-9b2cf4b076b0(k kksdfk)" />
       <recent name="$PROJECT_DIR$/faces/da459dd1-fbcb-4efc-8ceb-4e3cae95ca9d" />
       <recent name="$PROJECT_DIR$/faces/5f797a3d-2662-49ce-a704-fb3c07abacb1" />
-      <recent name="$PROJECT_DIR$/ui" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/known/Hassan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tracker" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/eye tracing" />
       <recent name="$PROJECT_DIR$/known/Hossein" />
       <recent name="$PROJECT_DIR$/known" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="Testing GPU" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.4">
+    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,53 +76,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing GPU.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="asdasd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="face_recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/asdasd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="find_site_rank_by_keyword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="face_recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../finding_rank_of_site_in_google" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../finding_rank_of_site_in_google/find_site_rank_by_keyword.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +89,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_face_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mahmood" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +97,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_face_dataset.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/mahmood.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mahmood2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +118,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/mahmood2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Training Cascade Classifier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Training Cascade Classifier/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="track" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="face_recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/track.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.Testing GPU" />
-        <item itemvalue="Python.find_site_rank_by_keyword" />
-        <item itemvalue="Python.asdasd" />
-        <item itemvalue="Python.generate_face_dataset" />
+        <item itemvalue="Python.4" />
+        <item itemvalue="Python.track" />
+        <item itemvalue="Python.mahmood2" />
+        <item itemvalue="Python.mahmood" />
+        <item itemvalue="Python.testing (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617973390523</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding git ignore file">
+      <created>1617973425681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617973425681</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,53 +232,117 @@
     <option name="LAST_COMMIT_MESSAGE" value="adding git ignore file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="169" width="508" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617973300113">
+    <state x="125" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619104991470">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="424" y="169" width="508" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1617973300113" />
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1617973390324">
+    <state x="125" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104991470" />
+    <state x="424" y="169" width="527" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619545631251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617973390324" />
-    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl" timestamp="1617793895718">
+    <state x="424" y="169" width="527" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1619545631251" />
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1619809516363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="457" y="134" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1617793895718" />
-    <state width="1345" height="136" key="GridCell.Tab.0.bottom" timestamp="1617927584194">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619809516363" />
+    <state x="100" y="99" width="1166" height="528" key="DiffContextDialog" timestamp="1619574280831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="136" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
-    <state width="1345" height="136" key="GridCell.Tab.0.center" timestamp="1617927584194">
+    <state x="100" y="99" width="1166" height="528" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1619574280831" />
+    <state x="400" y="193" width="424" height="479" key="FileChooserDialogImpl" timestamp="1619384447713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="136" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
-    <state width="1345" height="136" key="GridCell.Tab.0.left" timestamp="1617927584193">
+    <state x="400" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619384447713" />
+    <state width="1345" height="447" key="GridCell.Tab.0.bottom" timestamp="1619757822530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="136" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1617927584193" />
-    <state width="1345" height="136" key="GridCell.Tab.0.right" timestamp="1617927584194">
+    <state width="1345" height="447" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619757822530" />
+    <state width="1345" height="447" key="GridCell.Tab.0.center" timestamp="1619757822529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="136" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1617927584194" />
-    <state x="34" y="0" key="SettingsEditor" timestamp="1617765720567">
+    <state width="1345" height="447" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
+    <state width="1345" height="447" key="GridCell.Tab.0.left" timestamp="1619757822529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1617765720567" />
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1617973395814">
+    <state width="1345" height="447" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
+    <state width="1345" height="447" key="GridCell.Tab.0.right" timestamp="1619757822529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617973395814" />
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614212967142">
+    <state width="1345" height="447" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
+    <state width="1345" height="216" key="GridCell.Tab.1.bottom" timestamp="1619757089682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614212967142" />
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1617918899957">
+    <state width="1345" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619757089682" />
+    <state width="1345" height="216" key="GridCell.Tab.1.center" timestamp="1619757089681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1617918899957" />
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1617927900619">
+    <state width="1345" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619757089681" />
+    <state width="1345" height="216" key="GridCell.Tab.1.left" timestamp="1619757089678">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1617927900619" />
+    <state width="1345" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619757089678" />
+    <state width="1345" height="216" key="GridCell.Tab.1.right" timestamp="1619757089681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619757089681" />
+    <state x="34" y="0" key="SettingsEditor" timestamp="1619328739884">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619328739884" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1617973430174">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617973430174" />
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1619574284915">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1619574284915" />
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619074812990">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1619074812990" />
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1619755817348">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1619755817348" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-1" timestamp="1619545636903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1619545636903" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-2" timestamp="1619545636903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-2/0.0.1366.728@0.0.1366.728" timestamp="1619545636903" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-3" timestamp="1619545636904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-3/0.0.1366.728@0.0.1366.728" timestamp="1619545636904" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-4" timestamp="1619545636904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-4/0.0.1366.728@0.0.1366.728" timestamp="1619545636904" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-5" timestamp="1619545636904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-5/0.0.1366.728@0.0.1366.728" timestamp="1619545636904" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-6" timestamp="1619545636905">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-6/0.0.1366.728@0.0.1366.728" timestamp="1619545636905" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-7" timestamp="1619545636905">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-7/0.0.1366.728@0.0.1366.728" timestamp="1619545636905" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-8" timestamp="1619545636906">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-8/0.0.1366.728@0.0.1366.728" timestamp="1619545636906" />
+    <state x="100" y="99" width="1166" height="528" key="dock-window-9" timestamp="1619545636906">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="dock-window-9/0.0.1366.728@0.0.1366.728" timestamp="1619545636906" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1618811217812">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1618811217812" />
   </component>
 </project>

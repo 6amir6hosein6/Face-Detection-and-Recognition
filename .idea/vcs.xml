@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Eye-Tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tracjer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ui/Eye-Tracker" vcs="Git" />
   </component>
 </project>
