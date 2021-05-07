@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="face depth detection in order to detect live and real face and prevent fake face">
+    <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="doing some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training Cascade Classifier/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training Cascade Classifier/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Url.py" beforeDir="false" afterPath="$PROJECT_DIR$/Url.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619809702666</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="doing some changes">
+      <created>1620368800387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620368800387</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,7 +240,8 @@
     <MESSAGE value="increasing speed of program (with using Threads) amd adding a little GUI using PyQt&#10;&#10;adding function in order to download new file from backend using API" />
     <MESSAGE value="adding git ignore file" />
     <MESSAGE value="face depth detection in order to detect live and real face and prevent fake face" />
-    <option name="LAST_COMMIT_MESSAGE" value="face depth detection in order to detect live and real face and prevent fake face" />
+    <MESSAGE value="doing some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="doing some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="125" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619104991470">
@@ -246,10 +252,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="169" width="527" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1619545631251" />
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1620336734612">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1620368799315">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1620336734612" />
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1620368799315" />
     <state x="100" y="99" width="1166" height="528" key="DiffContextDialog" timestamp="1619574280831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -298,10 +304,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620336419021" />
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1619809707614">
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1620368808981">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619809707614" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620368808981" />
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1619574284915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

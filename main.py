@@ -104,7 +104,7 @@ def saving_new_faces(users):
 
             newfile = base64.b64decode(user['newImage'])
 
-            filename = 'faces/' + folder + '/' + name + '2.jpg'
+            filename = 'faces/' + folder + '/' + name + '.jpg'
             with open(filename, 'wb') as f:
                 f.write(newfile)
 
@@ -181,7 +181,7 @@ if __name__ == "__main__":
 
     face_loading()
 
-    # t1 = threading.Thread(target=face_detection)
-    # t1.start()
-    #
-    # camera_starting(video)
+    t1 = threading.Thread(target=face_detection)
+    t1.start()
+
+    camera_starting(video)
