@@ -1,4 +1,4 @@
-base = 'http://192.168.43.204:5000'
+base = 'https://xface-detection.herokuapp.com'
 
 get_new_faces = '/api/user/sendInfo'
 

@@ -6,22 +6,6 @@ import numpy
 
 cascade = cv2.CascadeClassifier('cascade/cascade.xml')
 
-# while True:
-#     image = cv2.imread('positive/face4800.jpg')
-#
-#     rectangles = cascade.detectMultiScale(image)
-#
-#     for rectangle in rectangles:
-#         start_point = (rectangle[0], rectangle[1])
-#         end_point = (rectangle[0] + rectangle[2], rectangle[1] + rectangle[3])
-#         color = (255, 0, 0)
-#         thickness = 2
-#         image = cv2.rectangle(image, start_point, end_point, color, thickness)
-#
-#     cv2.imshow('face', image)
-#
-#     cv2.waitKey(1)
-
 with mss.mss() as sct:
     monitor = {'top': 420, 'left': 800, 'width': 450, 'height': 300}
     p = 0

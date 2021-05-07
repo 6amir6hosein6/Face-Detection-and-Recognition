@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9a63bba1-d059-4968-a5c2-5ce764284c5e" name="Default Changelist" comment="face depth detection in order to detect live and real face and prevent fake face">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training Cascade Classifier/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training Cascade Classifier/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Url.py" beforeDir="false" afterPath="$PROJECT_DIR$/Url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
       <recent name="$PROJECT_DIR$/known" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.4">
+  <component name="RunManager" selected="Python.main">
     <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="face_recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Training Cascade Classifier" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Training Cascade Classifier/testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.4" />
         <item itemvalue="Python.track" />
         <item itemvalue="Python.mahmood2" />
         <item itemvalue="Python.mahmood" />
-        <item itemvalue="Python.testing (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619809519985</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="face depth detection in order to detect live and real face and prevent fake face">
+      <created>1619809702666</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619809702666</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,10 +246,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="169" width="527" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1619545631251" />
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1619809571438">
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2" timestamp="1620336734612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619809571438" />
+    <state x="312" y="0" width="713" height="723" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1620336734612" />
     <state x="100" y="99" width="1166" height="528" key="DiffContextDialog" timestamp="1619574280831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,50 +258,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="400" y="193" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619384447713" />
-    <state width="1345" height="447" key="GridCell.Tab.0.bottom" timestamp="1619757822530">
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom" timestamp="1620368732090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="447" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619757822530" />
-    <state width="1345" height="447" key="GridCell.Tab.0.center" timestamp="1619757822529">
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620368732090" />
+    <state width="1345" height="180" key="GridCell.Tab.0.center" timestamp="1620368732089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="447" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
-    <state width="1345" height="447" key="GridCell.Tab.0.left" timestamp="1619757822529">
+    <state width="1345" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620368732089" />
+    <state width="1345" height="180" key="GridCell.Tab.0.left" timestamp="1620368732088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="447" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
-    <state width="1345" height="447" key="GridCell.Tab.0.right" timestamp="1619757822529">
+    <state width="1345" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620368732088" />
+    <state width="1345" height="180" key="GridCell.Tab.0.right" timestamp="1620368732089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="447" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619757822529" />
-    <state width="1345" height="216" key="GridCell.Tab.1.bottom" timestamp="1619757089682">
+    <state width="1345" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620368732089" />
+    <state width="1345" height="216" key="GridCell.Tab.1.bottom" timestamp="1619852708131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619757089682" />
-    <state width="1345" height="216" key="GridCell.Tab.1.center" timestamp="1619757089681">
+    <state width="1345" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619852708131" />
+    <state width="1345" height="216" key="GridCell.Tab.1.center" timestamp="1619852708130">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619757089681" />
-    <state width="1345" height="216" key="GridCell.Tab.1.left" timestamp="1619757089678">
+    <state width="1345" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619852708130" />
+    <state width="1345" height="216" key="GridCell.Tab.1.left" timestamp="1619852708129">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619757089678" />
-    <state width="1345" height="216" key="GridCell.Tab.1.right" timestamp="1619757089681">
+    <state width="1345" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619852708129" />
+    <state width="1345" height="216" key="GridCell.Tab.1.right" timestamp="1619852708131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619757089681" />
+    <state width="1345" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619852708131" />
     <state x="434" y="88" width="487" height="544" key="RollbackChangesDialog" timestamp="1619809682422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="88" width="487" height="544" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619809682422" />
-    <state x="34" y="0" key="SettingsEditor" timestamp="1619328739884">
+    <state x="34" y="0" key="SettingsEditor" timestamp="1620336419021">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619328739884" />
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1619809575574">
+    <state x="34" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620336419021" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1619809707614">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619809575574" />
+    <state x="269" y="112" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619809707614" />
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1619574284915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -300,10 +310,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="116" y="125" width="1116" height="503" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1619074812990" />
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1619755817348">
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1620332954463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1619755817348" />
+    <state x="366" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1620332954463" />
     <state x="100" y="99" width="1166" height="528" key="dock-window-1" timestamp="1619545636903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
