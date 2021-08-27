@@ -13,6 +13,8 @@ import time
 import re
 from functools import partial
 import Url
+import numpy as np
+import urllib.request
 
 dialog_wifi = None
 dialog_confirmation = None
@@ -31,6 +33,28 @@ video_screen = cv2.imread('start.jpeg')
 t1 = None
 found = False
 match = None
+
+cascade = cv2.CascadeClassifier('cascade.xml')
+
+
+def real_face_detecter():
+    url = 'http://172.18.48.125:8080/stream.jpeg'
+
+    resp = urllib.request.urlopen(url)
+    image = np.asarray(bytearray(resp.read()), dtype="uint8")
+    image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+    image = cv2.resize(image, (0, 0), fx=0.6, fy=0.6)
+
+    rectangles = cascade.detectMultiScale(image)
+
+    # color = (255, 0, 0)
+    # thickness = 2
+    # for rectangle in rectangles:
+    #     start_point = (rectangle[0], rectangle[1])
+    #     end_point = (rectangle[2]+rectangle[0], rectangle[3]+rectangle[1])
+    #     image = cv2.rectangle(image, start_point, end_point, color, thickness)
+
+    return len(rectangles)
 
 
 def face_loading():
@@ -53,7 +77,13 @@ def face_detection():
             time.sleep(1)
             faces = face_recognition.face_locations(video_screen, model=MODEL)
             number_of_face = len(faces)
-            if number_of_face == 1:
+
+            number_of_real_face = real_face_detecter()
+            # number_of_real_face = 1
+
+            print(number_of_face, number_of_real_face)
+
+            if number_of_face == 1 and number_of_real_face == 1:
                 recognize_face(video_screen, faces)
 
 
@@ -71,6 +101,13 @@ def recognize_face(frame, locations):
 
             encodings = face_recognition.face_encodings(frame, locations)
             results = face_recognition.compare_faces(known_face, encodings[index], TOLERANCE)
+
+            # color = (255, 0, 0)
+            # thickness = 2
+            # for rectangle in rectangles:
+            #     start_point = (rectangle[0], rectangle[1])
+            #     end_point = (rectangle[2]+rectangle[0], rectangle[3]+rectangle[1])
+            #     image = cv2.rectangle(image, start_point, end_point, color, thickness)
 
             if True in results:
                 global found, match, video_screen
@@ -177,7 +214,7 @@ if __name__ == "__main__":
     video = cv2.VideoCapture(0)
     app = QtWidgets.QApplication(sys.argv)
 
-    getting_new_faces()
+    # getting_new_faces()
 
     face_loading()
 
