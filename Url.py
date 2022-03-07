@@ -1,5 +1,5 @@
-base = 'https://xface-detection.herokuapp.com'
+base = 'https://smartvideodoorphoneproject.herokuapp.com'
 
-get_new_faces = '/api/user/sendInfo'
+get_new_faces = '/door-security/get-member-for-rass/'
 
 confirmation = '/api/user/attendance'

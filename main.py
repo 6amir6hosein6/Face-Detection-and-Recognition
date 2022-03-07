@@ -1,20 +1,17 @@
 import face_recognition
 import cv2
-import requests
-import json
 import os
-import base64
-from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-from ui.wifi import Ui_wifi
-from ui.Confirmation import Ui_confirmation
 import threading
 import time
-import re
-from functools import partial
-import Url
 import numpy as np
 import urllib.request
+from PyQt5 import QtWidgets
+# from Diologs import noWifi, asking_for_confirmation
+import freenect
+import frame_convert2
+# from save_new_faces import getting_new_faces
+
 
 dialog_wifi = None
 dialog_confirmation = None
@@ -29,23 +26,26 @@ MODEL = "hog"  # hog
 known_face = []
 known_name = []
 
-video_screen = cv2.imread('start.jpeg')
+rgb_camera = cv2.imread('start.jpeg')
+depth_camera = cv2.imread('start.jpeg')
 t1 = None
 found = False
 match = None
-
 cascade = cv2.CascadeClassifier('cascade.xml')
 
 
+def get_depth():
+    return frame_convert2.pretty_depth_cv(freenect.sync_get_depth()[0])
+
+
+def get_video():
+    return frame_convert2.video_cv(freenect.sync_get_video()[0])
+
+
 def real_face_detecter():
-    url = 'http://172.18.48.125:8080/stream.jpeg'
 
-    resp = urllib.request.urlopen(url)
-    image = np.asarray(bytearray(resp.read()), dtype="uint8")
-    image = cv2.imdecode(image, cv2.IMREAD_COLOR)
-    image = cv2.resize(image, (0, 0), fx=0.6, fy=0.6)
-
-    rectangles = cascade.detectMultiScale(image)
+    global depth_camera
+    rectangles = cascade.detectMultiScale(depth_camera)
 
     # color = (255, 0, 0)
     # thickness = 2
@@ -71,20 +71,20 @@ def face_loading():
 
 
 def face_detection():
-    global video_screen, found
+    global rgb_camera, found
     while True:
         if not found:
             time.sleep(1)
-            faces = face_recognition.face_locations(video_screen, model=MODEL)
+            faces = face_recognition.face_locations(rgb_camera, model=MODEL)
             number_of_face = len(faces)
 
             number_of_real_face = real_face_detecter()
             # number_of_real_face = 1
 
-            print(number_of_face, number_of_real_face)
+            # print(number_of_face, number_of_real_face)
 
-            if number_of_face == 1 and number_of_real_face == 1:
-                recognize_face(video_screen, faces)
+            if number_of_face == 1 and number_of_real_face >= 1:
+                recognize_face(rgb_camera, faces)
 
 
 def recognize_face(frame, locations):
@@ -94,10 +94,10 @@ def recognize_face(frame, locations):
 
         if height > 50:
 
-            top_left = (face_location[3], face_location[0])
-            bottom_right = (face_location[1], face_location[2])
-            color = [0, 255, 0]
-            cv2.rectangle(frame, top_left, bottom_right, color, FRAME_THICKNESS)
+            # top_left = (face_location[3], face_location[0])
+            # bottom_right = (face_location[1], face_location[2])
+            # color = [0, 255, 0]
+            # cv2.rectangle(frame, top_left, bottom_right, color, FRAME_THICKNESS)
 
             encodings = face_recognition.face_encodings(frame, locations)
             results = face_recognition.compare_faces(known_face, encodings[index], TOLERANCE)
@@ -110,115 +110,38 @@ def recognize_face(frame, locations):
             #     image = cv2.rectangle(image, start_point, end_point, color, thickness)
 
             if True in results:
-                global found, match, video_screen
+                global found, match, rgb_camera
                 found, match = True, known_name[results.index(True)]
-                video_screen = cv2.imread('start.jpeg')
+                rgb_camera = cv2.imread('start.jpeg')
 
 
-def camera_starting(video):
-    global found, match
+def camera_starting():
+    global found, match, rgb_camera, depth_camera
     while True:
         if found:
-            asking_for_confirmation(match)
+            print(match)
+            # asking_for_confirmation(match)
 
-        ret, frame = video.read()
+        rgb_camera = get_video()
+        depth_camera = get_depth()
 
-        global video_screen
-        video_screen = frame.copy()
-
-        cv2.imshow('video', video_screen)
+        cv2.imshow('video', rgb_camera)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
 
-def saving_new_faces(users):
-    for user in users:
-        name = user['firstName'] + ' ' + user['lastName']
-        folder = user['uuId'] + '(' + name + ')'
-        path = os.path.join('faces', folder)
-        if not os.path.exists('faces/' + folder):
-            os.makedirs(path, mode=0o777)
-
-            newfile = base64.b64decode(user['newImage'])
-
-            filename = 'faces/' + folder + '/' + name + '.jpg'
-            with open(filename, 'wb') as f:
-                f.write(newfile)
-
-
-def getting_new_faces():
-    try:
-        url = Url.base + Url.get_new_faces
-
-        response_json = requests.get(url)
-
-        response_data = json.loads(response_json.text)
-
-        saving_new_faces(response_data['data'])
-
-    except:
-        noWifi()
-
-
-def noWifi():
-    global dialog_wifi
-    dialog_wifi = QtWidgets.QDialog()
-    dialog_wifi.ui = Ui_wifi()
-
-    dialog_wifi.ui.setupUi(dialog_wifi)
-
-    dialog_wifi.setAttribute(QtCore.Qt.WA_DeleteOnClose)
-    dialog_wifi.exec_()
-
-
-def confirmation(uuid):
-    print(uuid)
-    try:
-        url = Url.base + Url.confirmation
-        data = {
-            'uuid': uuid,
-        }
-        requests.post(url, data=data)
-    except:
-        noWifi()
-    dialog_confirmation.close()
-
-
-def unconfirmation():
-    dialog_confirmation.close()
-
-
-def asking_for_confirmation(info):
-    global match, found, dialog_confirmation
-    match, found = None, False
-
-    name = re.search("\((.+)\)", info)[1]
-    uuid = re.sub(r"(\(.+\))", "", info)
-
-    dialog_confirmation = QtWidgets.QDialog()
-    dialog_confirmation.ui = Ui_confirmation()
-
-    dialog_confirmation.ui.setupUi(dialog_confirmation)
-
-    dialog_confirmation.ui.name.setText(name)
-
-    dialog_confirmation.ui.confim.clicked.connect(partial(confirmation, uuid=uuid))
-    dialog_confirmation.ui.unconfirm.clicked.connect(partial(unconfirmation))
-
-    dialog_confirmation.setAttribute(QtCore.Qt.WA_DeleteOnClose)
-
-    dialog_confirmation.exec_()
-
-
 if __name__ == "__main__":
-    video = cv2.VideoCapture(0)
+    # video = cv2.VideoCapture(0)
     app = QtWidgets.QApplication(sys.argv)
 
     # getting_new_faces()
 
+    print('-----------')
+    print('Loading faces ...')
     face_loading()
+    print('Done!')
 
     t1 = threading.Thread(target=face_detection)
     t1.start()
 
-    camera_starting(video)
+    camera_starting()
