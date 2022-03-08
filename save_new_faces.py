@@ -3,7 +3,7 @@ import requests
 import json
 import base64
 import os
-from Diologs import noWifi
+#from Diologs import noWifi
 import shutil
 
 
