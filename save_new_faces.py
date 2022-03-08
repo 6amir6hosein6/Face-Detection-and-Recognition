@@ -3,7 +3,11 @@ import requests
 import json
 import base64
 import os
+<<<<<<< HEAD
 #from Diologs import noWifi
+=======
+# from Diologs import noWifi
+>>>>>>> 8a98cede0e4e26a971f05df0dd9972117eda8811
 import shutil
 
 
@@ -18,6 +22,7 @@ def saving_new_faces(users):
         path = os.path.join('faces', folder)
         if not os.path.exists('faces/' + folder):
             os.makedirs(path, mode=0o777)
+
             newfile = base64.b64decode(user['picture'][2:-1])
             filename = 'faces/' + folder + '/' + name + '.jpg'
             with open(filename, 'wb') as f:
