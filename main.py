@@ -10,7 +10,7 @@ from PyQt5 import QtWidgets
 # from Diologs import noWifi, asking_for_confirmation
 import freenect
 import frame_convert2
-# from save_new_faces import getting_new_faces
+from save_new_faces import getting_new_faces
 
 
 dialog_wifi = None
