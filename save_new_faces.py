@@ -3,13 +3,10 @@ import requests
 import json
 import base64
 import os
-<<<<<<< HEAD
-#from Diologs import noWifi
-=======
-# from Diologs import noWifi
->>>>>>> 8a98cede0e4e26a971f05df0dd9972117eda8811
 import shutil
+import json
 
+allow = {}
 
 def saving_new_faces(users):
     if os.path.exists('faces'):
@@ -17,6 +14,7 @@ def saving_new_faces(users):
 
     os.makedirs('faces', mode=0o777)
     for user in users:
+        allow[user['id']] = user['allow_status']
         name = user['name']
         folder = str(user['id']) + '(' + name + ')'
         path = os.path.join('faces', folder)
@@ -38,4 +36,8 @@ def getting_new_faces():
     response_json = requests.post(url, data)
     response_data = json.loads(response_json.text)
     saving_new_faces(response_data["members"])
+    
+    with open('access.json', 'w') as jsonfile:
+        json.dump(allow, jsonfile)
 
+#getting_new_faces()

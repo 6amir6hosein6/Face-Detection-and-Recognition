@@ -402,7 +402,7 @@ def runloop(depth=None, video=None, body=None, dev=None):
             error_open_device()
             return
         if depth is not None:
-            freenect_set_depth_mode(mdev._ptr, freenect_find_depth_mode(FREENECT_RESOLUTION_LOW, FREENECT_DEPTH_11BIT))
+            freenect_set_depth_mode(mdev._ptr, freenect_find_depth_mode(FREENECT_RESOLUTION_LOW, FREENECT_DEPTH_MM))
         if video is not None:
             freenect_set_video_mode(mdev._ptr, freenect_find_video_mode(FREENECT_RESOLUTION_LOW, FREENECT_VIDEO_RGB))
 

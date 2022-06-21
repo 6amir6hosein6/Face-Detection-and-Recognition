@@ -16,10 +16,16 @@ def get_depth():
 def get_video():
     return frame_convert2.video_cv(freenect.sync_get_video()[0])
 
+waiting = cv2.imread('waiting.jpeg')
+cv2.imwrite('Video.jpeg', waiting)
 print('Start getting image ... ')
 while 1:
-    cv2.imwrite('Depth.jpeg', get_depth())
-    cv2.imwrite('Video.jpeg', get_video())
-    time.sleep(0.2)
+    try:
+        cv2.imwrite('Depth.jpeg', get_depth())
+        cv2.imwrite('Video.jpeg', get_video())
+    except:
+        waiting = cv2.imread('waiting.jpeg')
+        cv2.imwrite('Video.jpeg', waiting)
+    time.sleep(0.5)
     if cv2.waitKey(10) == 27:
         break

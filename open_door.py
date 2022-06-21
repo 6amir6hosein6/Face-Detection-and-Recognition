@@ -8,5 +8,8 @@ def open_door():
     GPIO.output(16,GPIO.LOW)
     time.sleep(1)
     GPIO.output(16,GPIO.HIGH)
+    
+def close_door():
+    GPIO.output(16,GPIO.HIGH)
 
  
